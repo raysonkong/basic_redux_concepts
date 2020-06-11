@@ -38,14 +38,12 @@ const reducer = (state=0, action) => {
 // This is the heart of redux 
 let store = createStore(reducer);
 
-// dispatch actions
-
-
-
 
 // Monitor
 store.subscribe(() => console.log(store.getState()));
 
+
+// dispatch actions
 store.dispatch(increment())
 store.dispatch(increment())
 store.dispatch(increment())
